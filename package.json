@@ -1,0 +1,32 @@
+{
+  "name": "namastefood",
+  "version": "1.0.0",
+  "description": "This is a Food Ordering app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build" :"parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid-dharth1729/Namaste-Food.git"
+  },
+  "keywords": [
+    "food",
+    "sid",
+    "star"
+  ],
+  "author": "Siddharth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sid-dharth1729/Namaste-Food/issues"
+  },
+  "homepage": "https://github.com/Sid-dharth1729/Namaste-Food#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

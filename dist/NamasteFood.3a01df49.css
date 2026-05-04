@@ -1,0 +1,47 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-items ul {
+  flex-wrap: wrap;
+  font-size: 24px;
+  list-style: none;
+  display: flex;
+}
+
+.nav-items > ul > li, .search-box {
+  padding: 10px;
+}
+
+.conatainer {
+  padding: 5px;
+}
+
+.res-container > .res-cards {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cards {
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.res-logo {
+  width: 100%;
+  height: 140px;
+}
+
+.cards:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
+/*# sourceMappingURL=NamasteFood.3a01df49.css.map */
