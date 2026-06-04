@@ -19819,7 +19819,7 @@ $RefreshReg$(_c, "Header");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utlis/constant":"eHfHu"}],"eHfHu":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../utlis/constant":"eHfHu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eHfHu":[function(require,module,exports,__globalThis) {
 //utils will contains the links of image or the data which is utility value
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -19841,45 +19841,59 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _cards = require("./Cards"); //importing a "default export"
 var _cardsDefault = parcelHelpers.interopDefault(_cards);
 var _mocData = require("../utlis/mocData");
+var _s = $RefreshSig$();
 const Body = ()=>{
+    _s();
+    const [listOfRes, setlistOfRes] = (0, _react.useState)((0, _mocData.resList)) //useState
+    ;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-box",
-                children: "Search"
+                className: "filter",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "filter-btn",
+                    onClick: ()=>{
+                        const filterRes = listOfRes.filter((resList)=>resList.card.info.avgRating > 4);
+                        setlistOfRes(filterRes);
+                    },
+                    children: "Top Rated retautrants"
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 15,
+                    columnNumber: 17
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 8,
+                lineNumber: 14,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-cards",
-                children: [
-                    (0, _mocData.resList).map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
-                            resData: restaurant
-                        }, restaurant.card.info.id, false, {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 14,
-                            columnNumber: 21
-                        }, undefined)),
-                    ";"
-                ]
-            }, void 0, true, {
+                children: listOfRes.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
+                        resData: restaurant
+                    }, restaurant.card.info.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 28,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 11,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 7,
+        lineNumber: 13,
         columnNumber: 9
     }, undefined);
 };
+_s(Body, "5cQOLZUDzOds8CotASduAKYsruw=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -19890,7 +19904,7 @@ $RefreshReg$(_c, "Body");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./Cards":"8ZZrU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utlis/mocData":"5T2mV"}],"8ZZrU":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./Cards":"8ZZrU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utlis/mocData":"5T2mV"}],"8ZZrU":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b4d5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$b4d5.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -19986,7 +20000,7 @@ $RefreshReg$(_c, "Cards");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utlis/constant":"eHfHu"}],"5T2mV":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../utlis/constant":"eHfHu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5T2mV":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "resList", ()=>resList);
