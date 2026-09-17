@@ -1,19 +1,20 @@
 import { CDN_URL } from "../utlis/constant";
 const Cards = (props) => {
     const { resData } = props;
-    console.log(props)
+    // console.log(props)
+
     //optional chaining
     // const {name} = resData?.card
     return (
         <div className="cards" style={{ backgroundColor: "#f0f0f0" }}>
             <img className="res-logo"
                 alt="res-logo"
-                src={ CDN_URL + resData.card.info.cloudinaryImageId}></img>
-            <h3>{resData.card.info.name}</h3>
-            <h4>{(resData.card.info.cuisines).join(", ")}</h4>
-            <h4>₹{resData.card.info.costForTwo / 100} FOR TWO</h4>
-            <h4>{resData.card.info.avgRating} stars</h4>
-            <h4>{resData.card.info.sla.deliveryTime} mins</h4>
+                src={ CDN_URL + resData.info.cloudinaryImageId}></img>
+            <h3>{resData.info.name}</h3>
+            <h4 className = "m-0">{(resData.info.cuisines).join(", ")}</h4>
+            <h4 className = "m-0">{resData.info.costForTwo} </h4>
+            <h4 className = "m-0">{resData.info.avgRating} stars</h4>
+            <h4 className = "m-0">{resData.info.sla.deliveryTime} mins</h4>
 
         </div>
     );

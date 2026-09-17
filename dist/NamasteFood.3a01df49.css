@@ -6,12 +6,12 @@
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
 }
 
 .nav-items ul {
   flex-wrap: wrap;
-  font-size: 24px;
+  font-size: 1.2rem;
   list-style: none;
   display: flex;
 }
@@ -26,6 +26,7 @@
 
 .res-container > .res-cards {
   flex-wrap: wrap;
+  justify-content: center;
   display: flex;
 }
 
@@ -48,5 +49,23 @@
 .filter-btn {
   cursor: pointer;
   margin: 10px;
+}
+
+.m-0 {
+  margin: 8px;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  padding: 5px;
 }
 /*# sourceMappingURL=NamasteFood.3a01df49.css.map */
