@@ -26,7 +26,7 @@ const Body = () => {
     }
 
     //When Ui rendering
-    //Conditional Rendering
+    //Conditional Rendering (renderng based on some condition)
     if(listOfRes.length === 0){
         return <Shimmer />;
     }

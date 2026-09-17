@@ -6,12 +6,12 @@
 }
 
 .logo img {
-  width: 80px;
+  width: 70px;
 }
 
 .nav-items ul {
   flex-wrap: wrap;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   list-style: none;
   display: flex;
 }
@@ -67,5 +67,10 @@
   height: 300px;
   margin: 5px;
   padding: 5px;
+}
+
+.btnLogin {
+  cursor: pointer;
+  padding: 0 10px;
 }
 /*# sourceMappingURL=NamasteFood.3a01df49.css.map */

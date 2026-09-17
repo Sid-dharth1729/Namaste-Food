@@ -7,14 +7,14 @@
 }
 
 .logo img {
-    width: 80px;
+    width: 70px;
 }
 
 .nav-items ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .nav-items >ul >li {
     padding: 10px;
@@ -68,4 +68,9 @@
     height: 300px;
     padding: 5px;
     margin: 5px;
+}
+
+.btnLogin{
+    padding: 0 10px;
+    cursor: pointer;
 }
